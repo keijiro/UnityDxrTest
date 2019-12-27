@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Cage.unity
+    guid: 728de2bd83930ab40a747bb9931ca24e
   m_configObjects: {}
