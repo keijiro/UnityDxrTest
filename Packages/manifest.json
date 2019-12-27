@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "jp.keijiro.danish-statues": "0.0.4",
+    "jp.keijiro.test-assets": "1.0.1",
     "jp.keijiro.klak.motion": "1.0.1",
     "com.unity.render-pipelines.high-definition": "7.1.7"
   }
