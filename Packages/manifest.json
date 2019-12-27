@@ -3,13 +3,16 @@
     {
       "name": "Keijiro",
       "url": "https://registry.npmjs.com",
-      "scopes": [ "jp.keijiro" ]
+      "scopes": [
+        "jp.keijiro"
+      ]
     }
   ],
   "dependencies": {
+    "com.unity.render-pipelines.high-definition": "7.1.7",
+    "com.unity.render-pipelines.high-definition-config": "file:../LocalPackages/com.unity.render-pipelines.high-definition-config",
     "jp.keijiro.danish-statues": "0.0.4",
-    "jp.keijiro.test-assets": "1.0.1",
     "jp.keijiro.klak.motion": "1.0.1",
-    "com.unity.render-pipelines.high-definition": "7.1.7"
+    "jp.keijiro.test-assets": "1.0.1"
   }
 }

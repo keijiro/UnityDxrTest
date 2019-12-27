@@ -542,7 +542,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 31.830723, g: 31.830723, b: 31.830723, a: 31.830723}
+    - _EmissiveColor: {r: 31.830692, g: 31.830692, b: 31.830692, a: 31.830692}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 0.4000001
-  m_ShapeHeight: 2.0000172
+  m_ShapeHeight: 2.000019
   m_AspectRatio: 1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
@@ -684,7 +684,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 31.830723
+  m_Intensity: 31.830692
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -725,7 +725,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 0.4000001, y: 2.0000172}
+  m_AreaSize: {x: 0.4000001, y: 2.000019}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -742,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 1757513079}
   m_LocalRotation: {x: 0.9659259, y: -0, z: 0.258819, w: 0}
   m_LocalPosition: {x: -1.5, y: 1, z: 1}
-  m_LocalScale: {x: 0.4000001, y: 2.0000172, z: 0.01}
+  m_LocalScale: {x: 0.4000001, y: 2.000019, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
