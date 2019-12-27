@@ -125,48 +125,6 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 1
---- !u!114 &-3922711327736167080
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31394aa05878563408489d5c1688f3a0, type: 3}
-  m_Name: PathTracing
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  enable:
-    m_OverrideState: 1
-    m_Value: 1
-  layerMask:
-    m_OverrideState: 0
-    m_Value:
-      serializedVersion: 2
-      m_Bits: 4294967295
-  maximumSamples:
-    m_OverrideState: 1
-    m_Value: 1024
-    min: 1
-    max: 1024
-  minimumDepth:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 1
-    max: 10
-  maximumDepth:
-    m_OverrideState: 0
-    m_Value: 3
-    min: 1
-    max: 10
-  maximumIntensity:
-    m_OverrideState: 1
-    m_Value: 100
-    min: 0
-    max: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,11 +135,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Profile
+  m_Name: Common
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -3922711327736167080}
-  - {fileID: 3332505153715644645}
   - {fileID: -5823457848805454459}
   - {fileID: 4921033015821261841}
   - {fileID: 3151427658234371682}
@@ -239,30 +195,6 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 0
     m_Value: 1
---- !u!114 &3332505153715644645
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1984a7ac01bf84b86559f7595cdc68, type: 3}
-  m_Name: LightCluster
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  maxNumLightsPercell:
-    m_OverrideState: 0
-    m_Value: 10
-    min: 0
-    max: 24
-  cameraClusterRange:
-    m_OverrideState: 1
-    m_Value: 30
-    min: 0.001
-    max: 50
 --- !u!114 &4921033015821261841
 MonoBehaviour:
   m_ObjectHideFlags: 3
