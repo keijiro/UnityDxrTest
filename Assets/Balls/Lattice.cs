@@ -96,7 +96,7 @@ public sealed class Lattice : MonoBehaviour
             new VertexAttributeDescriptor
                 (VertexAttribute.Position, VertexAttributeFormat.Float32, 3),
             new VertexAttributeDescriptor
-                (VertexAttribute.Normal, VertexAttributeFormat.SNorm16, 4)
+                (VertexAttribute.Normal, VertexAttributeFormat.Float32, 3)
         );
         _mesh.SetVertexBufferData(vertexArray, 0, 0, vertexCount);
 
@@ -145,7 +145,7 @@ public sealed class Lattice : MonoBehaviour
     struct Vertex
     {
         public float3 position;
-        public SNorm16x4 normal;
+        public float3 normal;
     }
 
     NativeArray<Vertex> CreateVertexArray()
@@ -277,7 +277,7 @@ public sealed class Lattice : MonoBehaviour
             var V2 = points[i2];
             var V3 = points[i3];
 
-            var N = (SNorm16x4)math.normalize(math.cross(V2 - V1, V3 - V1));
+            var N = math.normalize(math.cross(V2 - V1, V3 - V1));
 
             output[i * 3 + 0] = new Vertex { position = V1, normal = N };
             output[i * 3 + 1] = new Vertex { position = V2, normal = N };
