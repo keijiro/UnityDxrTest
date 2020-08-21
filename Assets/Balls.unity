@@ -216,53 +216,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &884545507
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 884545509}
-  - component: {fileID: 884545508}
-  m_Layer: 0
-  m_Name: DXR HDRP Tier 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &884545508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884545507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06c0317e0632e6c47bb855ee99f95544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderPipelineAsset: {fileID: 11400000, guid: ea41bf5f312afd048a5e2e693e08e9c4,
-    type: 2}
---- !u!4 &884545509
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884545507}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962591216
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +264,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071166200
 GameObject:
@@ -359,7 +314,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197628894
 GameObject:
@@ -404,7 +359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343738482
 GameObject:
@@ -452,7 +407,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406768429
 GameObject:
@@ -483,7 +438,7 @@ Transform:
   m_Children:
   - {fileID: 1757513082}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 145, y: 0, z: 0}
 --- !u!1 &1735336567
 GameObject:
@@ -531,7 +486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757513079
 GameObject:
@@ -563,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 10
+  m_Version: 11
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -661,6 +616,7 @@ MonoBehaviour:
   showAdditionalSettings: 4
   m_AreaLightEmissiveMeshShadowCastingMode: 1
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 1
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &1757513081
 Light:
   m_ObjectHideFlags: 0
@@ -765,7 +721,7 @@ Transform:
   m_Children:
   - {fileID: 2051337888}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!1 &2051337887
 GameObject:
@@ -777,7 +733,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2051337888}
   - component: {fileID: 2051337891}
-  - component: {fileID: 2051337890}
   - component: {fileID: 2051337889}
   m_Layer: 0
   m_Name: Main Camera
@@ -872,8 +827,8 @@ MonoBehaviour:
   stopNaNs: 0
   taaSharpenStrength: 0.6
   physicalParameters:
-    m_Iso: 200
-    m_ShutterSpeed: 0.005
+    m_Iso: 12000
+    m_ShutterSpeed: 0.016666668
     m_Aperture: 1.8
     m_BladeCount: 5
     m_Curvature: {x: 2, y: 11}
@@ -905,14 +860,6 @@ MonoBehaviour:
       data1: 0
       data2: 0
   defaultFrameSettings: 0
---- !u!81 &2051337890
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051337887}
-  m_Enabled: 1
 --- !u!20 &2051337891
 Camera:
   m_ObjectHideFlags: 0
