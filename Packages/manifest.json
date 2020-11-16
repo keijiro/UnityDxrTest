@@ -9,7 +9,7 @@
     }
   ],
   "dependencies": {
-    "com.unity.burst": "1.2.3",
+    "com.unity.burst": "1.4.1",
     "com.unity.render-pipelines.high-definition": "8.2.0",
     "com.unity.render-pipelines.high-definition-config": "file:../LocalPackages/com.unity.render-pipelines.high-definition-config",
     "jp.keijiro.danish-statues": "0.0.4",
