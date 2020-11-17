@@ -46,3 +46,8 @@ MonoBehaviour:
     m_Value: 10
     min: 0
     max: 50
+  minSmoothness:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1

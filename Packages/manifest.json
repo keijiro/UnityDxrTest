@@ -10,14 +10,14 @@
   ],
   "dependencies": {
     "com.unity.burst": "1.4.1",
-    "com.unity.render-pipelines.high-definition": "8.2.0",
-    "com.unity.render-pipelines.high-definition-config": "file:../LocalPackages/com.unity.render-pipelines.high-definition-config",
+    "com.unity.render-pipelines.high-definition": "10.2.0",
     "jp.keijiro.danish-statues": "0.0.4",
     "jp.keijiro.klak.motion": "1.0.1",
     "jp.keijiro.test-assets": "1.0.1",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.imageconversion": "1.0.0",
     "com.unity.modules.physics": "1.0.0",
-    "com.unity.modules.uielements": "1.0.0"
+    "com.unity.modules.uielements": "1.0.0",
+    "com.unity.modules.video": "1.0.0"
   }
 }
