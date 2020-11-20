@@ -169,12 +169,12 @@ MonoBehaviour:
     max: 31
   m_MinSmoothness:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0
     min: 0
     max: 1
   m_SmoothnessFadeStart:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.2
     min: 0
     max: 1
   m_RayMaxIterations:
