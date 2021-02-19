@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.burst": {
-      "version": "1.4.3",
+      "version": "1.5.0-pre.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -17,34 +17,35 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "10.2.2",
+      "version": "11.0.0",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0"
+      }
     },
     "com.unity.render-pipelines.high-definition": {
-      "version": "10.2.2",
+      "version": "11.0.0",
       "depth": 0,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "10.2.2",
-        "com.unity.shadergraph": "10.2.2",
-        "com.unity.visualeffectgraph": "10.2.2",
-        "com.unity.render-pipelines.high-definition-config": "10.2.2"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.modules.video": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.render-pipelines.core": "11.0.0",
+        "com.unity.shadergraph": "11.0.0",
+        "com.unity.visualeffectgraph": "11.0.0",
+        "com.unity.render-pipelines.high-definition-config": "11.0.0"
+      }
     },
     "com.unity.render-pipelines.high-definition-config": {
-      "version": "10.2.2",
+      "version": "11.0.0",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "10.2.2"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.render-pipelines.core": "11.0.0"
+      }
     },
     "com.unity.searcher": {
       "version": "4.3.1",
@@ -54,14 +55,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
-      "version": "10.2.2",
+      "version": "11.0.0",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "10.2.2",
+        "com.unity.render-pipelines.core": "11.0.0",
         "com.unity.searcher": "4.3.1"
-      },
-      "url": "https://packages.unity.com"
+      }
     },
     "com.unity.ugui": {
       "version": "1.0.0",
@@ -73,13 +73,12 @@
       }
     },
     "com.unity.visualeffectgraph": {
-      "version": "10.2.2",
+      "version": "11.0.0",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.shadergraph": "10.2.2"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.shadergraph": "11.0.0"
+      }
     },
     "jp.keijiro.danish-statues": {
       "version": "0.0.4",
@@ -106,76 +105,55 @@
     },
     "com.unity.modules.animation": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.audio": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.imageconversion": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.imgui": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 3,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.jsonserialize": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.physics": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.ui": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
-    "com.unity.modules.uielements": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.ui": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.uielementsnative": "1.0.0"
-      }
-    },
-    "com.unity.modules.uielementsnative": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.ui": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      }
-    },
     "com.unity.modules.unitywebrequest": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.video": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.audio": "1.0.0",
