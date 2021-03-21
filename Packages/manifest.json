@@ -10,6 +10,7 @@
   ],
   "dependencies": {
     "com.unity.burst": "1.5.0-pre.4",
+    "com.unity.recorder": "2.6.0-exp.4",
     "com.unity.render-pipelines.high-definition": "11.0.0",
     "jp.keijiro.danish-statues": "0.0.4",
     "jp.keijiro.klak.motion": "1.0.1",
