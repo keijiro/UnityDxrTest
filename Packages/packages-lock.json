@@ -61,6 +61,12 @@
         "com.unity.render-pipelines.core": "14.0.3"
       }
     },
+    "com.unity.rendering.denoising": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.searcher": {
       "version": "4.9.2",
       "depth": 2,

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: PathTracing
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -24,24 +23,34 @@ MonoBehaviour:
       m_Bits: 4294967295
   maximumSamples:
     m_OverrideState: 1
-    m_Value: 1024
-    min: 1
-    max: 1024
+    m_Value: 200
   minimumDepth:
     m_OverrideState: 0
     m_Value: 1
-    min: 1
-    max: 10
   maximumDepth:
     m_OverrideState: 1
     m_Value: 4
-    min: 1
-    max: 10
   maximumIntensity:
     m_OverrideState: 1
     m_Value: 100
-    min: 0
-    max: 100
+  denoising:
+    m_OverrideState: 1
+    m_Value: 2
+  useAOVs:
+    m_OverrideState: 0
+    m_Value: 1
+  temporal:
+    m_OverrideState: 0
+    m_Value: 0
+  asyncDenoising:
+    m_OverrideState: 0
+    m_Value: 1
+  skyImportanceSampling:
+    m_OverrideState: 0
+    m_Value: 0
+  tilingParameters:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 0, w: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,14 +79,6 @@ MonoBehaviour:
   m_Name: LightCluster
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
-  maxNumLightsPercell:
-    m_OverrideState: 0
-    m_Value: 10
-    min: 0
-    max: 24
   cameraClusterRange:
     m_OverrideState: 1
     m_Value: 30
-    min: 0.001
-    max: 50
