@@ -1,11 +1,15 @@
 UnityDxrTest
 ============
 
-This is a repository that contains test scenes for
-[Unity's real-time ray tracing feature](https://unity.com/ray-tracing).
+This is a repository containing test scenes for
+[Unity's realtime ray tracing features](https://unity.com/ray-tracing).
 
 ![gif](https://i.imgur.com/3iMouZ1.gif)
 
 ![screenshot](https://i.imgur.com/0aPO5qUl.jpg)
 
-This project requires Unity 2020.1.
+System Requirements
+-------------------
+
+- Unity 2022.2
+- Windows PC with a DXR compatible graphics card
