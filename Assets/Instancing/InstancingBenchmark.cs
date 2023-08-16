@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Profiling;
 using System.Collections.Generic;
 
 namespace UnityDxrTest.Instancing {
@@ -25,6 +26,7 @@ public sealed class InstancingBenchmark : MonoBehaviour
 
     List<GameObject> _instances = new List<GameObject>();
     List<Transform> _xforms = new List<Transform>();
+    List<Vector4> _temp = new List<Vector4>();
 
     #endregion
 
@@ -33,7 +35,7 @@ public sealed class InstancingBenchmark : MonoBehaviour
     int TotalInstanceCount
       => Dimensions.x * Dimensions.y * Dimensions.z;
 
-    void UpdateXforms()
+    void UpdateTemp()
     {
         var count = 0;
         for (var i = 0u; i < Dimensions.x; i++)
@@ -45,10 +47,25 @@ public sealed class InstancingBenchmark : MonoBehaviour
                 for (var k = 0u; k < Dimensions.z; k++)
                 {
                     var z = Interval * (k - 0.5f * (Dimensions.z - 1));
-                    _xforms[count++].position = new Vector3(x, y, z);
+                    _temp[count++] = new Vector4(x, y, z, 0.1f);
                 }
             }
         }
+    }
+
+    void UpdateXforms()
+    {
+        Profiler.BeginSample("Update Temp");
+        UpdateTemp();
+        Profiler.EndSample();
+
+        Profiler.BeginSample("Update Transforms");
+        for (var i = 0; i < TotalInstanceCount; i++)
+        {
+            _xforms[i].localPosition = _temp[i];
+            _xforms[i].localScale = Vector3.one * _temp[i].w;
+        }
+        Profiler.EndSample();
     }
 
     #endregion
@@ -60,8 +77,9 @@ public sealed class InstancingBenchmark : MonoBehaviour
         var sheet = new MaterialPropertyBlock();
 
         _instances.Capacity = _xforms.Capacity = TotalInstanceCount;
+        _temp.AddRange(new Vector4[TotalInstanceCount]);
 
-        for (var i = 0u; i < TotalInstanceCount; i++)
+        for (var i = 0; i < TotalInstanceCount; i++)
         {
             var go = Instantiate(Prefab);
 
