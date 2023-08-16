@@ -13,7 +13,7 @@
     "com.unity.render-pipelines.high-definition": "15.0.6",
     "com.unity.rendering.denoising": "1.0.0",
     "jp.keijiro.danish-statues": "1.0.0",
-    "jp.keijiro.klak.motion": "1.0.2",
+    "jp.keijiro.klak.motion": "1.1.0",
     "jp.keijiro.test-assets": "1.0.1"
   }
 }
