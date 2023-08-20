@@ -24,14 +24,9 @@ public sealed class InstancingBenchmark : MonoBehaviour
 
     #endregion
 
-    #region Local arrays
-
-    GameObject[] _instances;
-
-    #endregion
-
     #region Private properties and methods
 
+    GameObject[] _instances;
     TransformAccessArray _xforms;
 
     int TotalInstanceCount
