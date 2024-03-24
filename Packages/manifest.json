@@ -9,9 +9,9 @@
     }
   ],
   "dependencies": {
-    "com.unity.recorder": "4.0.1",
-    "com.unity.render-pipelines.high-definition": "15.0.6",
-    "com.unity.rendering.denoising": "1.0.0",
+    "com.unity.recorder": "5.1.0-pre.1",
+    "com.unity.render-pipelines.high-definition": "17.0.2",
+    "com.unity.rendering.denoising": "1.0.5",
     "jp.keijiro.danish-statues": "1.0.0",
     "jp.keijiro.klak.motion": "1.1.0",
     "jp.keijiro.test-assets": "1.0.1"
