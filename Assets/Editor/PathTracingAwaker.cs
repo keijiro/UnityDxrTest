@@ -2,19 +2,13 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 using UnityEditor;
+using UnityEditorInternal;
 
 [InitializeOnLoad]
 public sealed class PathTracingAwaker
 {
-    static System.Type _gameViewType;
-
     static PathTracingAwaker()
-    {
-        var asm = typeof(UnityEditor.EditorWindow).Assembly;
-        _gameViewType = asm.GetType("UnityEditor.GameView");
-
-        EditorApplication.update += Update;
-    }
+      => EditorApplication.update += Update;
 
     static void Update()
     {
@@ -37,6 +31,6 @@ public sealed class PathTracingAwaker
         if (hdrp.IsFrameCompleted(hdcam)) return;
 
         // Game view repaint
-        EditorWindow.GetWindow(_gameViewType).Repaint();
+        InternalEditorUtility.RepaintAllViews();
     }
 }
